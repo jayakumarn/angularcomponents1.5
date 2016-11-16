@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-md-3">
+<h3>Results Property</h3>
+  <table class="table">
+      <tr>
+<div ng-repeat="product in model.products.results">
+          <product item="product" type="'Results'" set-binding="model.setBinding(product,type)"/>
+ </div>
+      </tr>
+  </table>
+    </div>
+<div class="col-md-3"></div>
+<div class="col-md-3">
+    <h3>Saved Property</h3>
+     <table class="table">  
+      <tr>
+         <div ng-repeat="product in model.products.saved">
+            <product item="product" type="'Saved'" set-binding="model.setBinding(product,type)"/>
+         </div>
+      </tr>
+  </table>
+</div>
+<div class="col-md-3"></div>    
+</div>
+</div>

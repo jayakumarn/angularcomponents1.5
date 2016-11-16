@@ -1,0 +1,44 @@
+body{
+	padding:10px;
+	background-color: #ccccbb;
+}
+
+.ng-cloak {
+    display: none;
+}
+
+#img_container {
+    position:relative;
+    display:inline-block;
+    text-align:center;    
+}
+
+td Div{
+    border: 1px solid black;
+}
+
+
+
+#img_container:hover {
+    background: #EEE;
+}
+.button {
+    position:absolute;
+    bottom:60px;
+    right:80px;
+    width:100px;
+    height:30px;
+}
+.animate-show {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    opacity: 1;
+}
+
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove {
+    display: inline-block !important;
+}
+.animate-show.ng-hide {
+    opacity: 0;
+}

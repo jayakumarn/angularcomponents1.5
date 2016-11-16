@@ -1,0 +1,23 @@
+
+            <td>
+              <div class="row" id="mainDiv" ng-style="{background: model.product.agency.brandingColors.primary}">
+                <div><img ng-src="{{model.product.agency.logo}}" /> </div>
+               
+              </div>
+              <div class="row" id="img_container" ng-mouseover="model.hoverIn(model.product.id)" ng-mouseleave="model.hoverOut(model.product.id)" >
+                  <img ng-src="{{model.product.mainImage}}" class="img-responsive" />
+                  <span  ng-show="model.hoverEdit" class="animate-show">
+                
+                    <button type="button"  ng-show="model.type=='Results'" ng-click="model.setBinding({type:model.type  })" class="btn btn-primary button">Add</button>
+                      <button type="button"  ng-show="model.type=='Saved'" ng-click="model.setBinding({type:model.type  })" class="btn btn-danger button">Remove</button>
+                    
+               
+            </span>
+              </div>
+                  <div class="row">
+                    <h4>   Price : {{model.product.price}}</h4>
+                        </div>
+         </td>
+        
+       
+   
